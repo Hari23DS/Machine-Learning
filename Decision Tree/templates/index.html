@@ -1,0 +1,26 @@
+{% block head %}
+<title>Airfoil Self Noise</title>
+<link rel="stylesheet" href="style.css'">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Airfoil Self Noise</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <label for="operation">Input Data (seprated by [', '])</label>
+
+<!-- <select id="operation" name="operation">
+  <option value="add">add</option>
+  <option value="subtract">subtract</option>
+  <option value="multiply">multiply</option>
+  <option value="divide">divide</option>
+</select> -->
+            <input type="text" name="input_data" id="input_data">
+            <!-- <input type="text" name="num2" id="num2"> -->
+            <input type="submit" value="predict">
+        </form>
+    </div>
+</div>
+{% endblock %}
